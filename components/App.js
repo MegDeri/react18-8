@@ -34,7 +34,7 @@ App = React.createClass({
     this.getGif(searchingText, function(gif) {  // 3.
       this.setState({  // 4
         loading: false,  // a
-        gif: gif,  // b
+        gif,  // b
         searchingText: searchingText  // c
       });
     }.bind(this));
